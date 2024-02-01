@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mapa</title>
 </head>
 <body>
-    <div id="map"></div>
-    
+    <div id="location">
+        <a href="mapa.html"><button onclick="getLocation()">Get My Location</button></a>
+    </div>
+
     <script src="localizacao.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCauBvST5zOEV-dZlQJ80318LJbC0Dz3Tk&callback=initMap"></script>
 </body>
