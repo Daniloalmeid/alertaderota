@@ -49,3 +49,15 @@ button:hover {
     width: 80%;
     margin: 20px auto;
 }
+
+#container2{
+    background-size: 100% 100%;
+    position: absolute;
+    height: 800px;
+    width: 350px;
+    left: 50%;
+    top: 100%;
+    transform: translate( -50%,-50%);
+    background-color:#007bff;
+    border-radius: 20px 20px;
+}
