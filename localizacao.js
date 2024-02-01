@@ -2,7 +2,7 @@ let map;
 
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: -34.397, lng: 150.644 }, // Sydney, Austrália como localização padrão
+        center: { lat: -34.397, lng: 150.644 },
         zoom: 15
     });
 }
@@ -32,10 +32,10 @@ function showPosition(position) {
 }
 
 function searchNearbyPlaces(latitude, longitude) {
-    const radius = 1000; // Raio de busca em metros
-    const apiKey = 'YOUR_API_KEY'; // Substitua pela sua chave de API da Google Places
+    const radius = 1000;
+    const apiKey = 'AIzaSyCauBvST5zOEV-dZlQJ80318LJbC0Dz3Tk'; // Substitua pela sua chave de API da Google Places
 
-    const url = https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${latitude},${longitude}&radius=${radius}&key=${apiKey};
+    const url = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${latitude},${longitude}&radius=${radius}&key=${apiKey}`;
 
     fetch(url)
         .then(response => response.json())
@@ -59,14 +59,14 @@ function addMarker(place) {
     });
 
     const infowindow = new google.maps.InfoWindow({
-        content: <h3>${place.name}</h3>
+        content: `<h3>${place.name}</h3>`
     });
 
     marker.addListener("click", () => {
         infowindow.open(map, marker);
     });
 }
-</script>
-<script async defer
-src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
-</script>
+
+
+
+//   AIzaSyCauBvST5zOEV-dZlQJ80318LJbC0Dz3Tk    //
