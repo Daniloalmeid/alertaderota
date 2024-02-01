@@ -1,0 +1,53 @@
+
+
+
+
+body {
+    height: 100vh;
+    /*background-color: black;
+    background-image: url('imagens/wallpaper002.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto ;
+    background-size: cover;
+    background-attachment: fixed; */
+    background: black url('imagens/mapa.PNG') center center no-repeat fixed;
+    background-size: cover;
+    /*
+    SHORTHAND - BACKGROUND
+    SEGUENCIA > COLOR > IMAGE > POSITION > REPEAT > [SIZE] > ATTACHMENT >*/
+
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#container1{
+    
+
+    background-size: 100% 100%;
+    position: absolute;
+    height: 200px;
+    width: 400px;
+    left: 50%;
+    top: 25%;
+    transform: translate( -50%,-50%);
+    background-color: yellow;
+    border-radius: 20px 20px;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #0056b3;
+}
+#map {
+    height: 400px;
+    width: 80%;
+    margin: 20px auto;
+}
