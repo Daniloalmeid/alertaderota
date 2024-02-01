@@ -31,6 +31,7 @@ body {
     transform: translate( -50%,-50%);
     background-color: yellow;
     border-radius: 20px 20px;
+    border: solid 1px black;
 }
 button {
     padding: 10px 20px;
@@ -53,11 +54,11 @@ button:hover {
 #container2{
     background-size: 100% 100%;
     position: absolute;
-    height: 800px;
-    width: 350px;
+    height: 150px;
+    width: 320px;
     left: 50%;
-    top: 100%;
+    top: 40%;
     transform: translate( -50%,-50%);
-    background-color:#007bff;
+    background-color:#007bffba;
     border-radius: 20px 20px;
 }
